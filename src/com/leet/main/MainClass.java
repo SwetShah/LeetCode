@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import com.leet.problem.names.CodeNames;
+import com.leet.problems.AddTwoNumbers;
 import com.leet.problems.TwoSum;
 
 public class MainClass {
@@ -13,11 +14,13 @@ public class MainClass {
 
 	static {
 		executionMap.put(1, CodeNames.TwoSum);
+		executionMap.put(2, CodeNames.AddTwoNumbers);
 	}
 
 	public static void main(String[] args) {
 
 		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.println("Enter Program number to execute");
 			int problemToExecute = scanner.nextInt();
 			CodeNames problemName = executionMap.get(problemToExecute);
 
@@ -26,7 +29,9 @@ public class MainClass {
 				int[] result = TwoSum.class.newInstance().getResult();
 				System.out.println(result);
 				break;
-				
+			
+			case AddTwoNumbers:
+				AddTwoNumbers.class.newInstance().getResult();
 			default : 
 				System.out.println("No Such Problem exists");
 			}
