@@ -10,8 +10,8 @@ public class AddTwoNumbers {
 	
 	List<ListNode> linkedList = new ArrayList<ListNode>();
 	static{
-		
-		
+		System.out.println("===========================================================================================");
+		System.out.println("Executing "+AddTwoNumbers.class.getSimpleName()+" problem");
 	}
 	
 	public void getResult(){

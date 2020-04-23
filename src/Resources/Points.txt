@@ -1,5 +1,5 @@
 1) Always consider numbers to be Long
 2) If 2 or three arrays are specified, do ask for size of each and do not assume the size be equal
-3) Use Primitive Arrays instead of List Collection for faster execution
+3) Use Primitive Arrays instead of Collections wherever possible for faster execution
 4) Even a method call takes some time so make sure to perform the execution in single method if possible
 5) For Searching it is beeter to use map and store the indexes and later retrive it directly using index since hashmap is quicker
