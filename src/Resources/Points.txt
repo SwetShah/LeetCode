@@ -3,3 +3,7 @@
 3) Use Primitive Arrays instead of Collections wherever possible for faster execution
 4) Even a method call takes some time so make sure to perform the execution in single method if possible
 5) For Searching it is beeter to use map and store the indexes and later retrive it directly using index since hashmap is quicker
+6) The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for performance reasons; you do it because you like the functional programming style.
+So, where is the performance improvement streams were invented for? So far we have only compared loops to streams. How about parallelization? The point of streams is easy parallelization for better performance.
+
+7) If you need to iterate 2 arrays which can perform soimutanoues operations then use while loop with 2 variables for iterating through each array isntead of nested for loop. eg : refer (4th) Problem : MedianOfTwoSortedArrays Solution. Link : https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/

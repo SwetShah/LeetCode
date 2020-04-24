@@ -9,6 +9,7 @@ import java.util.Scanner;
 import com.leet.problem.names.CodeNames;
 import com.leet.problems.AddTwoNumbers;
 import com.leet.problems.LongestSubstringWithoutRepeatingCharacters;
+import com.leet.problems.MedianOfTwoSortedArrays;
 import com.leet.problems.TwoSum;
 
 public class MainClass {
@@ -19,6 +20,7 @@ public class MainClass {
 		executionMap.put(1, CodeNames.TwoSum);
 		executionMap.put(2, CodeNames.AddTwoNumbers);
 		executionMap.put(3, CodeNames.LongestSubstringWithoutRepeatingCharacters);
+		executionMap.put(4, CodeNames.MedianOfTwoSortedArrays);
 	}
 
 	public static void main(String[] args) {
@@ -45,6 +47,12 @@ public class MainClass {
 			case LongestSubstringWithoutRepeatingCharacters:
 			{
 				int result = LongestSubstringWithoutRepeatingCharacters.class.newInstance().getResult();
+				System.out.println(result);
+				break;
+			}
+			case MedianOfTwoSortedArrays:
+			{
+				double result = MedianOfTwoSortedArrays.class.newInstance().getResult();
 				System.out.println(result);
 				break;
 			}
